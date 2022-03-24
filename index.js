@@ -36,10 +36,6 @@ client.loadSlashCommands(bot, false)
 
 module.exports = bot
 
- client.on("ready", () => {
-     console.log(`Logged in as ${client.user.tag}`)
- })
-
  client.on("messageCreate", (message) => {
     if (message.content == "daddy cheer mo ko") {
         message.reply("no")
@@ -50,7 +46,7 @@ module.exports = bot
     if (message.content == "daddy pogi ba si jami") {
         message.reply("yes")
     }
-    if (message.content == "@Jami |🦷") {
+    if (message.content == "@Jami 🐼") {
         message.reply("Busy si master")
     }
  })
